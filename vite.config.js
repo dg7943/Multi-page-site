@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-    base: "/Multi-page-site/"
+    base: "/Multi-page-site/",
     build: {
         outDir: "docs",
         rollupOptions: {

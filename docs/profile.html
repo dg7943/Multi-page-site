@@ -13,5 +13,14 @@
     <h1>Profile Page</h1>
     <a href="https://github.com/dg7943">Github Profile</a>
     <a href="index.html">Home Page</a>
+    <button onclick="doStartTimer()">4 Second Countdown Timer</button>
 </body>
+<script>
+    function doStartTimer() {
+      setTimeout(doEndTimer, 4*1000);
+    }
+    function doEndTimer() {
+      alert("The time is up!");
+    }
+</script>
 </html>

@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     plugins: [react()],
-    base: "/Multi-page-site/",
+    base: "/Multi-page-site/docs/",
     build: {
         outDir: "docs",
         rollupOptions: {

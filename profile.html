@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Link</title>
+    <style>
+        body {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Profile Page</h1>
+    <a href="https://github.com/dg7943">Github Profile</a>
+    <a href="index.html">Home Page</a>
+    <button onclick="doStartTimer()">4 Second Countdown Timer</button>
+</body>
+<script>
+    function doStartTimer() {
+      setTimeout(doEndTimer, 4*1000);
+    }
+    function doEndTimer() {
+      alert("The time is up!");
+    }
+</script>
+</html>

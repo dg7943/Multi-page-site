@@ -12,16 +12,30 @@
         background-color: aquamarine;
         display: flex;
         justify-content: space-evenly;
+        
 
       }
+      
+      h1 {
+        margin-bottom: 50px;
+        text-align: center;
+
+      }
+      button {
+        size: 40px 20px;
+      }
+
+
     </style>
   </head>
   <body>
-    <h1>Hello</h1>
-    <a href="profile.html">Profile page</a>
-    <a href="alerts.html">Button alerts</a>
-    <a href="./react.html">React Page</a>
+    <div>
+    <h1>Hello Welcome to my Web App</h1>
+    <button><a href="profile.html">Profile page</a></button>
+    <button><a href="alerts.html">Button alerts</a></button>
+    <button><a href="./react.html">React Page</a></button>
     <button onclick="doStartTimer()">4 Second Countdown Timer</button>
+    </div>
   </body>
   <script>
     function doStartTimer() {

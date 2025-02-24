@@ -3,39 +3,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Link</title>
-    <style>
-         body {
-        background-color: aquamarine;
-        display: flex;
-        justify-content: space-evenly;
-        
-
-      }
-      
-      h1 {
-        margin-bottom: 50px;
-        text-align: center;
-        display: block;
-
-      }
-      button {
-        size: 40px 20px;
-      }
-      div {
-        height: 30px;
-        width: 500px;
-      }
-  
-      </style>
+    
+      <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <h1>Profile Page</h1>
+  <nav id="navBar">
+    <h2>Profile Page</h2>
+    <ul>
+      <li><a href="profile">Profile</a></li>
+      <li><a href="alerts">Alerts</a></li>
+      <li><a href="todo">Todo list</a></li>
+      <li><a href="index">Home</a></li>
+    </ul>
+  </nav>
     <div>
-   <button>
+   <button style="font-size: x-large; display: flex; justify-content: center; margin: auto; margin-top: 30px;">
     <a href="https://github.com/dg7943">Github Profile</a>
    </button> 
-    <button><a href="index.html">Home Page</a></button>
-    <button onclick="doStartTimer()">4 Second Countdown Timer</button>
+    <button style="font-size: x-large; display: flex; justify-content: center; margin: auto; margin-top: 30px;" onclick="doStartTimer()">4 Second Countdown Timer</button>
 </div>
 </body>
 <script>

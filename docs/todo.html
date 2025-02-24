@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+.container {
+    margin: auto;
+    margin-top: 10%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+input {
+    flex: 1;
+    padding: 5px;
+}
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #e9ecef;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+    </style>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav id="navBar">
+        <h2>Welcome to my Web App</h2>
+        <ul>
+          <li><a href="profile">Profile</a></li>
+          <li><a href="alerts">Alerts</a></li>
+          <li><a href="todo">Todo list</a></li>
+          <li><a href="index">Home</a></li>
+        </ul>
+      </nav>
+    <div class="container">
+        <h2>To-Do List</h2>
+        <p><strong>Note:</strong> Data persists using local storage. Local storage is vulnerable to XSS attacks, meaning scripts injected into the page could access stored data.</p>
+        <div class="input-container">
+            <input type="text" id="todoInput" placeholder="Enter a task...">
+            <button id="addButton">Add</button>
+        </div>
+        <ul id="todoList"></ul>
+        <button id="clearButton">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

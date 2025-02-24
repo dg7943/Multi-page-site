@@ -14,7 +14,7 @@ export default defineConfig({
                 main: resolve(__dirname, "index.html"),
                 alerts: resolve(__dirname, "alerts.html"),
                 profile: resolve(__dirname, "profile.html"),
-                react: resolve(__dirname, "react.html")
+                todoList: resolve(__dirname, "todo.html")
                 
             }
         }
